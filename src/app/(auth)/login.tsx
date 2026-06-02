@@ -1,15 +1,11 @@
-import { Href, Redirect, useRouter } from "expo-router";
+import { Href, useRouter } from "expo-router";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useAuth } from "../../context/auth";
 
 export default function LoginScreen() {
-  const { login, isAuthenticated } = useAuth();
+  const { login } = useAuth();
   const router = useRouter();
-
-  if (isAuthenticated) {
-    return <Redirect href={"/" as Href} />;
-  }
 
   const handleLogin = async () => {
     await login();
@@ -23,7 +19,7 @@ export default function LoginScreen() {
         onPress={handleLogin}
         activeOpacity={0.85}
       >
-        <Text style={styles.loginButtonText}>Get Started</Text>
+        <Text style={styles.loginButtonText}>Login</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
