@@ -21,13 +21,11 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: "#121214",
     justifyContent: "center",
   },
 
   logoutButton: {
     backgroundColor: "#2C2C2E",
-    borderRadius: 16,
     paddingVertical: 12,
     paddingHorizontal: 24,
     justifyContent: "center",

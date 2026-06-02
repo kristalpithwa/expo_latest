@@ -28,26 +28,19 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: "#121214",
     justifyContent: "center",
   },
 
   loginButton: {
-    backgroundColor: "#FFFFFF",
-    borderRadius: 16,
-    height: 56,
+    backgroundColor: "#2C2C2E",
+    paddingVertical: 12,
+    paddingHorizontal: 24,
     justifyContent: "center",
     alignItems: "center",
-    shadowColor: "#FFFFFF",
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 3,
   },
   loginButtonText: {
-    color: "#121214",
+    color: "#FF453A",
     fontSize: 16,
-    fontWeight: "bold",
-    letterSpacing: 0.25,
+    fontWeight: "600",
   },
 });
